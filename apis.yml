@@ -1,8 +1,23 @@
 aid: metsera
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/metsera.png
 name: Metsera *
-description: 'Metsera * is a company surfaced as a portfolio company of gv, softbank-vision-fund and added
-  to the API Evangelist network as a stub for enrichment. Sector: life-sciences. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Metsera is a clinical-stage biopharmaceutical company developing injectable and oral therapies
+  for obesity and metabolic diseases, backed by GV and the SoftBank Vision Fund. As of this enrichment
+  pass its corporate domain (metsera.com) issues a 301 redirect to pfizer.com, consistent with Metsera''s
+  acquisition by Pfizer. As a life-sciences drug-development company it publishes no public API, developer
+  portal, OpenAPI, SDKs, or other machine-readable developer surface; it is tracked in the API Evangelist
+  network as a company/portfolio record rather than an API producer.'
 url: https://raw.githubusercontent.com/api-evangelist/metsera/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Life Sciences
+- Biopharmaceutical
+- Pharmaceuticals
+- Obesity
+- Metabolic Disease
+- Drug Development
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/metsera-domain-security.yml
 - type: Website
   url: https://metsera.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
